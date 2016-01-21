@@ -1,0 +1,12 @@
+{
+    "name": "todo-list",
+    "scripts": {
+        "start" : "node app"
+    },
+
+    "dependencies": {
+        "express": "3.2.6",
+        "jade": "*",
+        "stylus": "*"
+    }
+}
