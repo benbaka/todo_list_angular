@@ -4,7 +4,7 @@ module.exports = function(forbidden_day){
     ];
 
     return function(req, res, next){
-        var da = new Date().getDay();
+        var day = new Date().getDay();
 
         if (days[day] === forbidden_day){
             res.send("No visitors allowed on " + forbidden_day + "s!");
