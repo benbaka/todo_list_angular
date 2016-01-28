@@ -3,7 +3,10 @@ var express = require('express');
 var forbidder = require('./forbidder.js');
 var app=express();
 
-app.use(forbidder("Wednesday"));
+// Load the routes
+var routes = require("./routes")(app);
+
+//app.use(forbidder("Wednesday"));
 
 
 http.createServer(app).listen(3000, function(){
